@@ -1,0 +1,40 @@
+/* Typografy */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+body {
+    font-family: 'Merriweather' serif;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $font-color;
+}
+
+p,
+td,
+th,
+li,
+dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: $line-height * $font-size;
+    
+    :hover {
+        color: $hover-color;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+}
+
+ol,
+ul {
+    padding-left: 1.5em;
+}

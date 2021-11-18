@@ -1,14 +1,14 @@
 ---
-Title: About
+Title: Home
 Description: This is my about page.
 ---
 
 About me
 ==========================
 
-<img class="me" src="image/fin_bild.jpeg" height="300" alt="Bild på mig">
+<img class="me" src="image/fin_bild.jpeg" height="400" alt="Bild på mig">
 
-<br>Hej,
+Hej,
 
 Mitt namn är Marlena Bazan. Född och uppvuxen på andra sidan Östersjön (i Polen). Jag bor i en liten by som heter Sörby, utanför Anderslöv, med min man, vår 4-åriga dotter och hund.
 
