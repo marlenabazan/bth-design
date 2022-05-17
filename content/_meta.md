@@ -1,6 +1,6 @@
 ---
 Logo: image/logo.png
-Tagline: My portfolio.
+Tagline: Marlena Bazan, design-kursen.
 Social:
     - title: Länk till sidans github repo.
       url: https://github.com/marlenabazan/bth-design

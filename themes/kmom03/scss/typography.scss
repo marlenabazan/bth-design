@@ -1,9 +1,10 @@
 /* Typografy */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=PT+Serif&display=swap');
 
 body {
-    font-family: 'Merriweather' serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: $font-size;
     line-height: $line-height;
     color: $font-color;

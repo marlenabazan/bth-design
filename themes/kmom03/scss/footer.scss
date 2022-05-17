@@ -1,0 +1,23 @@
+/* Footer */
+
+.footer {
+    flex: 0 0 auto;
+    background-image: url('../../../assets/img/bokeh.webp');
+    background-size: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer a {
+    color: $font-color;
+}
+
+.footer .social {
+    font-size: 2rem;
+}
