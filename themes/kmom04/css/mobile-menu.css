@@ -1,0 +1,68 @@
+.slide {
+    overflow-y: hidden !important;
+    transition: height 0.5s ease-in !important;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 0;
+    list-style: none;
+}
+
+.nav ul li {
+    padding: 0 1em;
+
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+/* .nav a, .nav-toggle {
+    color: #333;
+} */
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav {
+        margin: 0 auto;
+    }
+
+    .nav ul {
+        display: inline-block;
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+    .nav ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .js .nav-toggle {
+        display: flex;
+        float: right;
+        width: 1em;
+        height: 1em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+}

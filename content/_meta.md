@@ -11,4 +11,12 @@ Social:
     - title: Länk till Sass.
       url: https://sass-lang.com/
       icon: fab fa-sass
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon
 ---
+
+
+<!-- - title: Destroy Session
+  url: ?action=session_destroy
+  icon: fas fa-trash-alt -->

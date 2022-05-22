@@ -1,0 +1,19 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../node_modules/normalize.css/normalize';
+
+@import 'variables-dark';
+@import 'blockquotes';
+@import 'code';
+@import 'test';
+@import 'typography';
+@import 'footer';
+@import 'header';
+@import 'main';
+@import 'images';
+@import 'technologies';
+@import 'analysis';

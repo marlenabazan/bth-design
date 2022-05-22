@@ -1,0 +1,77 @@
+/* Header */
+
+.header {
+    background-image: $background-image;
+    background-size: cover;
+    padding-left: 15px;
+    padding-right: 15px;
+    // height: 25%;
+}
+
+.nav .active a {
+    border: 1px solid $font-color;
+    padding: 1em;
+}
+
+.header,
+.site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Title */
+
+.title,
+.logo {
+    padding: 0.5em 1em 1em;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.logo {
+    max-width: 400px;
+    min-width: 200px;
+}
+
+@media (max-width: 1340px) {
+    .title {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .title,
+    .logo {
+        padding: 1em 1em 1em 0;
+    }
+
+    .title {
+        min-width: 50%;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+}
+
+.title * {
+    color: $font-color;
+}
+
+.title p {
+    font-style: italic;
+}
+
+.nav {
+    width: calc(100% / 3);
+
+    :hover {
+        color: $hover-color;
+    }
+
+    a {
+        color: $font-color;
+    }
+}
