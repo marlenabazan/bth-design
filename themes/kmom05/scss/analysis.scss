@@ -1,0 +1,29 @@
+.analysis-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.analysis-container .analysis {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    height: 5em;
+    padding: 1em;
+    border: 2px solid $technology-border;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+
+    :hover {
+        color: $hover-color;
+    }
+}
+
+.analysis a {
+    color: $font-color;
+}
+
+.analysis-load {
+    width: 100%;
+    height: 50vw;
+}

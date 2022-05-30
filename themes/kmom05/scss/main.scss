@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: $background-color;
+}
+
+/* Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+    margin: auto;
+    max-width: 64rem;
+}
+
+@media (max-width: 1067px) {
+    .main {
+        margin: 20px;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
