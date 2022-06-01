@@ -112,16 +112,16 @@
         },
         {
             "name": "mos/cimage",
-            "version": "v0.8.1",
+            "version": "v0.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mosbth/cimage.git",
-                "reference": "024905676145ee8a000fb0b6735ce6f8ba98f427"
+                "reference": "80cd4e092f67480e66482d953eb3e2048ca7ed91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mosbth/cimage/zipball/024905676145ee8a000fb0b6735ce6f8ba98f427",
-                "reference": "024905676145ee8a000fb0b6735ce6f8ba98f427",
+                "url": "https://api.github.com/repos/mosbth/cimage/zipball/80cd4e092f67480e66482d953eb3e2048ca7ed91",
+                "reference": "80cd4e092f67480e66482d953eb3e2048ca7ed91",
                 "shasum": ""
             },
             "require": {
@@ -171,9 +171,9 @@
             "support": {
                 "docs": "http://dbwebb.se/opensource/cimage",
                 "issues": "https://github.com/mosbth/cimage/issues",
-                "source": "https://github.com/mosbth/cimage/tree/master"
+                "source": "https://github.com/mosbth/cimage/tree/v0.8.4"
             },
-            "time": "2020-06-08T10:38:44+00:00"
+            "time": "2022-05-30T13:32:20+00:00"
         },
         {
             "name": "picocms/pico",
@@ -211,8 +211,8 @@
             "autoload": {
                 "psr-0": {
                     "Pico": "lib/",
-                    "PicoPluginInterface": "lib/",
-                    "AbstractPicoPlugin": "lib/"
+                    "AbstractPicoPlugin": "lib/",
+                    "PicoPluginInterface": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -265,20 +265,23 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.23.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "46cd95797e9df938fdd2b03693b5fca5e64b01ce"
+                "reference": "30885182c981ab175d4d034db0f6f469898070ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/46cd95797e9df938fdd2b03693b5fca5e64b01ce",
-                "reference": "46cd95797e9df938fdd2b03693b5fca5e64b01ce",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/30885182c981ab175d4d034db0f6f469898070ab",
+                "reference": "30885182c981ab175d4d034db0f6f469898070ab",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
+            },
+            "provide": {
+                "ext-ctype": "*"
             },
             "suggest": {
                 "ext-ctype": "For best performance"
@@ -294,12 +297,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -324,7 +327,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -340,7 +343,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2021-10-20T20:35:02+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -397,16 +400,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.44.4",
+            "version": "v1.44.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "4d400421528e9fa40caaffcf7824c172526dd99d"
+                "reference": "ae39480f010ef88adc7938503c9b02d3baf2f3b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4d400421528e9fa40caaffcf7824c172526dd99d",
-                "reference": "4d400421528e9fa40caaffcf7824c172526dd99d",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ae39480f010ef88adc7938503c9b02d3baf2f3b3",
+                "reference": "ae39480f010ef88adc7938503c9b02d3baf2f3b3",
                 "shasum": ""
             },
             "require": {
@@ -459,7 +462,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v1.44.4"
+                "source": "https://github.com/twigphp/Twig/tree/v1.44.6"
             },
             "funding": [
                 {
@@ -471,7 +474,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-16T12:11:20+00:00"
+            "time": "2021-11-25T13:31:46+00:00"
         }
     ],
     "packages-dev": [],
@@ -482,5 +485,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }

@@ -9,8 +9,12 @@
 }
 
 .nav .active a {
-    border: 1px solid $font-color;
-    padding: 1em;
+    border-radius: 15px 50px;
+    border: 2px solid $font-color;
+    padding: 0.9em;
+    border-bottom: 6px double $font-color;
+    border-right: 6px double $font-color;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .header,
@@ -23,25 +27,23 @@
 
 .title,
 .logo {
-    padding: 0.5em 1em 1em;
-}
-
-.title {
-    font-size: 1.5rem;
+    padding: 1em 1em 0;
+    // margin-top: 0.5em;
 }
 
 .logo {
     max-width: 400px;
     min-width: 200px;
+    margin-top: 1.5em;
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1570px) {
     .title {
         display: none;
     }
 }
 
-@media (max-width: 1064px) {
+@media (max-width: 1111px) {
     .title,
     .logo {
         padding: 1em 1em 1em 0;
@@ -52,7 +54,7 @@
     }
 
     .logo {
-        max-width: 30%;
+        max-width: 40%;
     }
 }
 
@@ -62,10 +64,12 @@
 
 .title p {
     font-style: italic;
+    white-space: nowrap;
 }
 
 .nav {
     width: calc(100% / 3);
+    margin-left: 16em;
 
     :hover {
         color: $hover-color;
@@ -73,5 +77,12 @@
 
     a {
         color: $font-color;
+    }
+}
+
+@media (max-width: 1111px) {
+    .nav {
+        margin-left: auto;
+        margin-right: auto;
     }
 }

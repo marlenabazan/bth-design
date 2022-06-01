@@ -4,6 +4,8 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Special+Elite&family=Yuji+Mai&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap");
 .fa,
 .fas,
 .far,
@@ -6541,6 +6543,12 @@ h6 {
   font-weight: bold;
 }
 
+.nav li,
+.footer,
+.main h1 {
+  font-family: "Playfair Display SC", serif;
+}
+
 ol,
 ul {
   padding-left: 1.5em;
@@ -6548,6 +6556,11 @@ ul {
 
 * {
   color: #111;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
 }
 
 /* Footer */
@@ -6582,8 +6595,12 @@ ul {
 }
 
 .nav .active a {
-  border: 1px solid #111;
-  padding: 1em;
+  border-radius: 15px 50px;
+  border: 2px solid #111;
+  padding: 0.9em;
+  border-bottom: 6px double #111;
+  border-right: 6px double #111;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .header,
@@ -6595,24 +6612,21 @@ ul {
 /* Title */
 .title,
 .logo {
-  padding: 0.5em 1em 1em;
-}
-
-.title {
-  font-size: 1.5rem;
+  padding: 1em 1em 0;
 }
 
 .logo {
   max-width: 400px;
   min-width: 200px;
+  margin-top: 1.5em;
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1570px) {
   .title {
     display: none;
   }
 }
-@media (max-width: 1064px) {
+@media (max-width: 1111px) {
   .title,
 .logo {
     padding: 1em 1em 1em 0;
@@ -6623,7 +6637,7 @@ ul {
   }
 
   .logo {
-    max-width: 30%;
+    max-width: 40%;
   }
 }
 .title * {
@@ -6632,10 +6646,12 @@ ul {
 
 .title p {
   font-style: italic;
+  white-space: nowrap;
 }
 
 .nav {
   width: 33.3333333333%;
+  margin-left: 16em;
 }
 .nav :hover {
   color: #a52a2a;
@@ -6644,6 +6660,12 @@ ul {
   color: #111;
 }
 
+@media (max-width: 1111px) {
+  .nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 * {
   box-sizing: border-box;
   border: 0 none;
@@ -6655,7 +6677,8 @@ ul {
 html,
 body {
   height: 100%;
-  background-color: #fff;
+  background-image: url("../../../assets/img/texture.jpeg");
+  background-size: cover;
 }
 
 /* Placement */
@@ -6688,6 +6711,8 @@ img {
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 2px solid #7f5362;
+  padding: 1em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -6699,6 +6724,14 @@ img {
 .website-screen {
   width: 100%;
   height: auto;
+}
+
+.website-screen-sm {
+  width: 48%;
+  height: auto;
+  float: left;
+  margin: 1%;
+  margin-bottom: 1em;
 }
 
 @media (max-width: 610px) {
@@ -6814,6 +6847,12 @@ img {
   margin-bottom: 2em;
 }
 
+.gallery-container a {
+  border: 2px solid #7f5362;
+  padding: 1em;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 767px) {
   .gallery-container {
     grid-template-columns: 100%;
@@ -6830,6 +6869,7 @@ img {
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  margin-bottom: 1em;
 }
 
 .embed-container iframe,

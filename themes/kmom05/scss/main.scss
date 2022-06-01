@@ -9,7 +9,10 @@
 html,
 body {
     height: 100%;
-    background-color: $background-color;
+    // background-color: $background-color;
+    background-image: $background-image-main;
+    background-size: cover;
+
 }
 
 /* Placement */

@@ -186,7 +186,7 @@ $hotlinkingWhitelist = getConfig('hotlinking_whitelist', array());
 
 $serverName  = isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : null;
 $referer     = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : null;
-$refererHost = parse_url($referer, PHP_URL_HOST);
+$refererHost = parse_url($referer ?? "", PHP_URL_HOST);
 
 if (!$allowHotlinking) {
     if ($passwordMatch) {
@@ -319,11 +319,11 @@ if (isset($shortcut)
 /**
  * src - the source image file.
  */
-$srcImage = urldecode(get('src'))
+$srcImage = urldecode(get('src', ""))
     or errorPage('Must set src-attribute.', 404);
 
 // Get settings for src-alt as backup image
-$srcAltImage = urldecode(get('src-alt', null));
+$srcAltImage = urldecode(get('src-alt', ""));
 $srcAltConfig = getConfig('src_alt', null);
 if (empty($srcAltImage)) {
     $srcAltImage = $srcAltConfig;
@@ -1149,7 +1149,8 @@ EOD;
 /**
  * Load, process and output the image
  */
-$img->log("Incoming arguments: " . print_r(verbose(), 1))
+$img->log("PHP version: " . phpversion())
+    ->log("Incoming arguments: " . print_r(verbose(), 1))
     ->setSaveFolder($cachePath)
     ->useCache($useCache)
     ->setSource($srcImage, $imagePath)
