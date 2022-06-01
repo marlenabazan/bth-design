@@ -142,5 +142,5 @@ Gallery
 </div>
 
 <div class="embed-container">
-    <iframe src="https://www.youtube.com/embed/L62LtChAwww" frameborder="0" allowfullscreen></iframe>
+    <iframe title="video" src="https://www.youtube.com/embed/L62LtChAwww" frameborder="0" allowfullscreen></iframe>
 </div>
